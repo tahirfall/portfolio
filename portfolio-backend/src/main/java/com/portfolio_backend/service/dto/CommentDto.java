@@ -1,5 +1,6 @@
 package com.portfolio_backend.service.dto;
 
+import jakarta.persistence.Column;
 import lombok.*;
 
 @Data
@@ -11,5 +12,6 @@ public class CommentDto {
     private String userFullName;
     private String position;
     private String commentText;
+    private String snapshotUrl;
 }
 

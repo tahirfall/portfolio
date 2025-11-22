@@ -18,8 +18,10 @@ public class Comment {
     private String userFullName;
     @Column(name = "position")
     private String position;
-    @Column(name = "comment_text")
+    @Column(name = "comment_text", columnDefinition = "TEXT")
     private String commentText;
+    @Column(name = "snapshot_url")
+    private String snapshotUrl;
 
 }
 

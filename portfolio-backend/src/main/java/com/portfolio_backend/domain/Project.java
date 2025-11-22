@@ -16,9 +16,9 @@ public class Project {
 
     @Column(name = "title")
     private String title;
-    @Column(name = "description")
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
-    @Column(name = "stack")
+    @Column(name = "stack", columnDefinition = "TEXT")
     private String stack;
     @Column(name = "link")
     private String link;

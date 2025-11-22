@@ -47,6 +47,7 @@ public class CommentServiceImpl implements CommentService {
         comment.setUserFullName(dto.getUserFullName());
         comment.setPosition(dto.getPosition());
         comment.setCommentText(dto.getCommentText());
+        comment.setSnapshotUrl(dto.getSnapshotUrl());
 
         return commentMapper.toDto(commentRepository.save(comment));
     }
