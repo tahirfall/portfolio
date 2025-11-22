@@ -1,0 +1,21 @@
+.project-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: rgba(84, 35, 192, 0.83);
+}
+
+.project-card:hover h3,
+.project-card:hover p,
+.project-card:hover a {
+  color: white;
+}
+
+.description {
+  white-space: pre-line;
+}

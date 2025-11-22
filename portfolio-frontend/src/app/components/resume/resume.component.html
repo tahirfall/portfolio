@@ -1,0 +1,43 @@
+<section class="w-full bg-white py-20 px-10 text-center">
+    <div class="resume-container">
+        <h2 class="text-4xl font-bold text-purple-700 mb-12">
+            MY RESUME (EN | FR)
+        </h2>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button 
+            class="tab-btn" 
+            [class.active]="activeTab === 'en'"
+            (click)="activeTab = 'en'">
+            English
+            </button>
+
+            <button 
+            class="tab-btn"
+            [class.active]="activeTab === 'fr'"
+            (click)="activeTab = 'fr'">
+            Français
+            </button>
+        </div>
+
+        <hr />
+
+        <!-- English Version -->
+        <div *ngIf="activeTab === 'en'" class="tab-content">
+            <button class="download-btn" (click)="downloadCV('en')">
+            Open resume_en.pdf
+            </button>
+        </div>
+
+        <!-- French Version -->
+        <div *ngIf="activeTab === 'fr'" class="tab-content">
+            <button class="download-btn" (click)="downloadCV('fr')">
+            Ouvrir cv_fr.pdf
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
