@@ -17,7 +17,7 @@
             class="tab-btn"
             [class.active]="activeTab === 'fr'"
             (click)="activeTab = 'fr'">
-            Français
+            French
             </button>
         </div>
 
@@ -33,7 +33,7 @@
         <!-- French Version -->
         <div *ngIf="activeTab === 'fr'" class="tab-content">
             <button class="download-btn" (click)="downloadCV('fr')">
-            Ouvrir cv_fr.pdf
+            Open resume_fr.pdf
             </button>
         </div>
 
