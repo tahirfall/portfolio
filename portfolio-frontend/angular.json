@@ -18,7 +18,7 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "outputPath": "/app/dist/portfolio-frontend/browser",
+            "outputPath": "dist",
             "assets": [
               "src/assets",
               "src/favicon.ico",
