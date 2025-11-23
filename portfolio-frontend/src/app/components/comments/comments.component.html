@@ -43,8 +43,8 @@
             <!-- Bouton "Voir plus / Voir moins" -->
             <button *ngIf="comment.commentText.length > 200"
                     (click)="comment.showFull = !comment.showFull"
-                    class="text-purple-600 font-semibold mt-3">
-                {{ comment.showFull ? 'Voir moins' : 'Voir plus' }}
+                    class="text-purple-600 font-semibold">
+                {{ comment.showFull ? 'See less' : 'See more' }}
             </button>
             </div>
 
