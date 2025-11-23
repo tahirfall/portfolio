@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { Comment, commentService } from '../../services/comment-service';
+import { Comment, CommentService } from '../../services/comment-service';
 import { CommonModule } from '@angular/common';
 
 
@@ -19,7 +19,7 @@ export class CommentsComponent {
   isLoading = signal(true);
   
 
-  constructor(private commentService: commentService) {}
+  constructor(private commentService: CommentService) {}
 
   ngOnInit(): void {
     this.loadComments();

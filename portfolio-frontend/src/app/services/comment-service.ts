@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface Comment {
   id: number;
@@ -13,13 +14,13 @@ export interface Comment {
 @Injectable({
   providedIn: 'root'
 })
-export class commentService {
+export class CommentService {
 
-  private apiUrl = 'http://localhost:8081/api/v1/comments';
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
   getAllComments(): Observable<Comment[]> {
-    return this.http.get<Comment[]>(this.apiUrl);
+    return this.http.get<Comment[]>(`${this.apiUrl}comments`);
   }
 }
