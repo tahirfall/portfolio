@@ -27,7 +27,7 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copie les fichiers build dans Nginx
-COPY --from=build /app/dist/portfolio-frontend /usr/share/nginx/html
+COPY --from=build /app/dist/portfolio-frontend/browser /usr/share/nginx/html
 
 # Copie le fichier de configuration Nginx personnalisé (optionnel)
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
