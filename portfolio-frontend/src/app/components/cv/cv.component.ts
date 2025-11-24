@@ -2,18 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-resume',
+  selector: 'app-cv',
   imports: [CommonModule],
-  templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css',
+  templateUrl: './cv.component.html',
+  styleUrl: './cv.component.css',
 })
-export class ResumeComponent {
+export class CvComponent {
   activeTab: 'en' | 'fr' = 'en'; 
 
   downloadCV(lang: 'en' | 'fr') {
     const file = lang === 'en'
-      ? 'assets/resume_en.pdf'
-      : 'assets/resume_fr.pdf';
+      ? 'assets/cv_en.pdf'
+      : 'assets/cv_fr.pdf';
 
     window.open(file, '_blank');
   }
