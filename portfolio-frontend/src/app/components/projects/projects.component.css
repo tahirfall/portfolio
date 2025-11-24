@@ -12,6 +12,7 @@
 
 .project-card:hover h3,
 .project-card:hover p,
+.project-card:hover span,
 .project-card:hover a {
   color: white;
 }
