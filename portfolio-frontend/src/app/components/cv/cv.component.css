@@ -17,9 +17,9 @@ cv-container {
 }
 
 .tab-btn.active {
-  background: #673ab7;
+  background: #0000FFC1;
   color: white;
-  border-color: #673ab7;
+  border-color: #0000FFC1;
 }
 
 .tab-content {
@@ -28,7 +28,7 @@ cv-container {
 
 .download-btn {
   padding: 10px 20px;
-  background: #673ab7;
+  background: #0000FFC1;
   color: white;
   border: none;
   border-radius: 5px;
