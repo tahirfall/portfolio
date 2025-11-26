@@ -7,7 +7,7 @@
 }
 
 .project-card:hover {
-  background-color: rgba(0,148,255,0.5);
+  background-color: rgba(0,80,255,0.7);
 }
 
 .project-card:hover h3,
