@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Library Management System",
+    "description": "A library management system that handles operations such as book cataloging, borrowing, and returns.",
+    "stack": "Spring Boot, Spring Data JPA, Spring Security, Thymeleaf, Maven, JUnit and Mockito, MySQL, Intellij",
+    "link": "https://github.com/tahirfall/SpringBoot-lms-app.git"
+  },
+  {
+    "title": "Reward Restauration",
+    "description": "Backend for a Restaurant Savings Plan Application (Microservices). The application consists of four microservices: \n\n- benefit-restaurant-service: Used to manage restaurants. \n- benefit-calculation-service: Used to calculate user benefits. \n- account-contribution-service: Used to manage user accounts. \n- reward-manager-service: Used to manage the distribution of benefits to the various beneficiaries for each account.",
+    "stack": "Java, Spring Boot, Maven, Cloud Configuration, Eureka Naming, Load Balancing, Gateway, Git, Intellij, ThunderClient",
+    "link": "https://github.com/tahirfall/reward_restauration.git"
+  },
+  {
+    "title": "Information Extraction from Scanned Receipts",
+    "description": "Web application for extracting and displaying information from receipts",
+    "stack": "React, Vite, TypeScript, Express, Bootstrap, AWS (Textract, DynamoDB), VsCode",
+    "link": "https://github.com/tahirfall/textract-receipt-app.git"
+  },
+  {
+    "title": "Automated analysis tool for customs statistics",
+    "description": "web application designed to automate and analyze customs statistics for BCEAO",
+    "stack": "Spring Boot, Spring Security, Spring Data JPA, Maven, Swagger UI, Angular, Primeng, primeflex, MySQL, Docker, Keycloak, Gitlab, Intellij",
+    "link": "https://gitlab.com/asdb"
+  }
+]

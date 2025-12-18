@@ -16,11 +16,14 @@ export interface Project {
 })
 export class ProjectService {
 
-  private apiUrl = environment.apiUrl;
+  //private apiUrl = environment.apiUrl;
+  private url = 'assets/data/projects.json';
 
   constructor(private http: HttpClient) {}
 
   getAllProjects(): Observable<Project[]> {
-    return this.http.get<Project[]>(`${this.apiUrl}projects`);
+    //return this.http.get<Project[]>(`${this.apiUrl}projects`);
+
+    return this.http.get<Project[]>(this.url);
   }
 }

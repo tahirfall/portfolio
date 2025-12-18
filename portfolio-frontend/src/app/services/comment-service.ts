@@ -16,11 +16,14 @@ export interface Comment {
 })
 export class CommentService {
 
-  private apiUrl = environment.apiUrl;
+  //private apiUrl = environment.apiUrl;
+  private url = 'assets/data/comments.json';
 
   constructor(private http: HttpClient) {}
 
   getAllComments(): Observable<Comment[]> {
-    return this.http.get<Comment[]>(`${this.apiUrl}comments`);
+    //return this.http.get<Comment[]>(`${this.apiUrl}comments`);
+
+    return this.http.get<Comment[]>(this.url);
   }
 }
